@@ -1,19 +1,39 @@
-VALIDATION FAILURE - Backend TypeScript Compilation (Attempt 92/100)
+VALIDATION FAILURE - Backend TypeScript Compilation (Attempt 93/100)
 
 The project validation failed at the "Backend TypeScript Compilation" step. You need to analyze the error and fix it.
 
 ## Error Details:
-npm warn exec The following package was not found and will be installed: tsc@2.0.4
+server.ts(20,16): error TS2345: Argument of type '{ connectionString: string; ssl: { require: boolean; }; } | { host: string; database: string; user: string; password: string; port: number; ssl: { require: boolean; }; }' is not assignable to parameter of type 'PoolConfig'.
+  Type '{ connectionString: string; ssl: { require: boolean; }; }' is not assignable to type 'PoolConfig'.
+    Types of property 'ssl' are incompatible.
+      Object literal may only specify known properties, and 'require' does not exist in type 'ConnectionOptions'.
+server.ts(64,39): error TS2304: Cannot find name 'JWT_SECRET'.
+server.ts(67,16): error TS2339: Property 'user_id' does not exist on type 'string | JwtPayload'.
+  Property 'user_id' does not exist on type 'string'.
+server.ts(138,7): error TS2304: Cannot find name 'JWT_SECRET'.
+server.ts(185,7): error TS2304: Cannot find name 'JWT_SECRET'.
+server.ts(210,15): error TS2339: Property 'user' does not exist on type 'Request<{}, any, any, ParsedQs, Record<string, any>>'.
+server.ts(211,18): error TS2339: Property 'user' does not exist on type 'Request<{}, any, any, ParsedQs, Record<string, any>>'.
+server.ts(212,17): error TS2339: Property 'user' does not exist on type 'Request<{}, any, any, ParsedQs, Record<string, any>>'.
+server.ts(213,23): error TS2339: Property 'user' does not exist on type 'Request<{}, any, any, ParsedQs, Record<string, any>>'.
+server.ts(222,15): error TS2339: Property 'user' does not exist on type 'Request<{}, any, any, ParsedQs, Record<string, any>>'.
+server.ts(223,18): error TS2339: Property 'user' does not exist on type 'Request<{}, any, any, ParsedQs, Record<string, any>>'.
+server.ts(224,17): error TS2339: Property 'user' does not exist on type 'Request<{}, any, any, ParsedQs, Record<string, any>>'.
+server.ts(225,23): error TS2339: Property 'user' does not exist on type 'Request<{}, any, any, ParsedQs, Record<string, any>>'.
+server.ts(234,25): error TS2339: Property 'user' does not exist on type 'Request<{}, any, any, ParsedQs, Record<string, any>>'.
+server.ts(265,15): error TS2339: Property 'user' does not exist on type 'Request<{}, any, any, ParsedQs, Record<string, any>>'.
+server.ts(266,18): error TS2339: Property 'user' does not exist on type 'Request<{}, any, any, ParsedQs, Record<string, any>>'.
+server.ts(267,17): error TS2339: Property 'user' does not exist on type 'Request<{}, any, any, ParsedQs, Record<string, any>>'.
 
 
 ## Validation Context:
 - Step: Backend TypeScript Compilation
 - Working Directory: /app/backend
-- Attempt: 92/100
+- Attempt: 93/100
 - Previous failures for this step: 2
 
 ## Project Memory Summary:
-- Total validation attempts: 20
+- Total validation attempts: 16
 - Common issues encountered: Backend TypeScript Compilation validation failure (persistent)
 - Known dependencies: @hookform/resolvers, @radix-ui/react-accordion, @radix-ui/react-alert-dialog, @radix-ui/react-aspect-ratio, @radix-ui/react-avatar, @radix-ui/react-checkbox, @radix-ui/react-collapsible, @radix-ui/react-context-menu, @radix-ui/react-dialog, @radix-ui/react-dropdown-menu
 - Missing dependencies: None
@@ -62,8 +82,8 @@ PROTECTED DIRECTORIES (DO NOT MODIFY):
 
 
 ## Previous Validation Failures for Backend TypeScript Compilation:
-- 7:29:05 AM: 
 - 7:29:42 AM: 
+- 7:30:16 AM: 
 
 ## Your Task:
 1. **Analyze the Error**: Understand what specifically went wrong in the Backend TypeScript Compilation step
